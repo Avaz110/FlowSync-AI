@@ -1,0 +1,1327 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FlowSync AI | Autonomous Task Intelligence & Team Scheduling</title>
+  <meta name="description" content="FlowSync AI is the autonomous B2B workflow intelligence platform for high-velocity engineering and product teams. Eliminate sprint chaos and routine busywork.">
+  <meta name="theme-color" content="#0B0F19">
+
+  <!-- Google Fonts: Plus Jakarta Sans & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap 5.3.3 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <!-- Bootstrap Icons 1.11.3 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Background Ambience Glows -->
+  <div class="glow-bg-mesh">
+    <div class="glow-orb orb-indigo"></div>
+    <div class="glow-orb orb-sky"></div>
+    <div class="glow-orb orb-purple"></div>
+  </div>
+
+  <!-- Announcement Bar -->
+  <div class="announcement-bar py-2 text-center text-secondary small border-bottom border-secondary-subtle">
+    <div class="container d-flex align-items-center justify-content-center gap-2 flex-wrap">
+      <span class="badge bg-indigo-gradient text-white px-2 py-1">New in v2.4</span>
+      <span>Autonomous Sprint Pilot is now live with instant Jira & GitHub deep sync.</span>
+      <a href="#features" class="text-sky fw-semibold text-decoration-none ms-1 d-inline-flex align-items-center gap-1">
+        Learn more <i class="bi bi-arrow-right"></i>
+      </a>
+    </div>
+  </div>
+
+  <!-- Sticky Glass Navbar -->
+  <nav class="navbar navbar-expand-lg sticky-top custom-navbar" id="mainNavbar">
+    <div class="container">
+      <!-- Logo -->
+      <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+        <div class="logo-icon-wrapper">
+          <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="28" height="28" rx="8" fill="url(#logo_grad)" />
+            <path d="M7 14C7 10.134 10.134 7 14 7V10C11.7909 10 10 11.7909 10 14H7Z" fill="white" />
+            <path d="M21 14C21 17.866 17.866 21 14 21V18C16.2091 18 18 16.2091 18 14H21Z" fill="white" />
+            <circle cx="14" cy="14" r="3" fill="#38BDF8" />
+            <circle cx="20" cy="8" r="2" fill="#38BDF8" />
+            <circle cx="8" cy="20" r="2" fill="#6366F1" />
+            <defs>
+              <linearGradient id="logo_grad" x1="0" y1="0" x2="28" y2="28" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#6366F1" />
+                <stop offset="1" stop-color="#38BDF8" />
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+        <span class="brand-text">FlowSync<span class="brand-accent">AI</span></span>
+      </a>
+
+      <!-- Mobile Toggle -->
+      <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="bi bi-list fs-2 text-white"></span>
+      </button>
+
+      <!-- Nav Links -->
+      <div class="collapse navbar-collapse" id="navbarContent">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-lg-1">
+          <li class="nav-item">
+            <a class="nav-link" href="#preview">Workflow AI</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#features">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#how-it-works">How It Works</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#pricing">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#faq">FAQ</a>
+          </li>
+        </ul>
+
+        <!-- Right CTA group -->
+        <div class="d-flex align-items-center gap-3">
+          <a href="#preview" class="nav-link d-none d-xl-inline text-secondary hover-white">Sign In</a>
+          <button class="btn btn-primary-gradient px-4 py-2 rounded-pill fw-semibold shadow-sm open-trial-modal" data-plan="Pro">
+            <span>Start Free Trial</span>
+            <i class="bi bi-arrow-right ms-1"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero-section py-5 position-relative" id="hero">
+    <div class="container pt-4 pb-3">
+      <!-- Hero Header -->
+      <div class="row justify-content-center text-center">
+        <div class="col-lg-10 col-xl-9">
+          
+          <!-- Pill Tag -->
+          <div class="d-inline-flex align-items-center gap-2 px-3 py-1 rounded-pill hero-tag mb-4">
+            <span class="pulse-dot"></span>
+            <span class="fw-medium text-sky small">Autonomous B2B Task Intelligence</span>
+            <span class="text-secondary small">&bull;</span>
+            <span class="text-secondary small">Zero Context Switching</span>
+          </div>
+
+          <!-- Main Title -->
+          <h1 class="display-3 fw-extrabold hero-title mb-3">
+            Turn Team Chaos into <br class="d-none d-md-block">
+            <span class="gradient-text">Synchronized Velocity</span>
+          </h1>
+
+          <!-- Subtitle -->
+          <p class="lead text-secondary hero-subtitle mb-4 mx-auto">
+            Eliminate 12+ hours of sprint triage, lost action items, and manual scheduling every week. FlowSync AI autonomously routes tasks, balances workload, and orchestrates execution across Slack, Jira, and GitHub in real time.
+          </p>
+
+          <!-- Action Buttons -->
+          <div class="d-flex flex-column flex-sm-row align-items-center justify-content-center gap-3 mb-4">
+            <button class="btn btn-primary-gradient btn-lg px-4 py-3 rounded-pill fw-bold shadow-lg open-trial-modal" data-plan="Pro">
+              <span class="d-inline-flex align-items-center gap-2">
+                <span>Start 14-Day Free Trial</span>
+                <i class="bi bi-chevron-right fs-6"></i>
+              </span>
+            </button>
+            <a href="#preview" class="btn btn-outline-glass btn-lg px-4 py-3 rounded-pill fw-semibold text-white">
+              <i class="bi bi-play-circle-fill text-sky me-2"></i>
+              <span>Watch Interactive Demo</span>
+            </a>
+          </div>
+
+          <!-- Micro Trustcopy -->
+          <div class="d-flex align-items-center justify-content-center gap-4 text-secondary small mb-5 flex-wrap">
+            <span class="d-flex align-items-center gap-1"><i class="bi bi-check-circle-fill text-sky"></i> No credit card required</span>
+            <span class="d-flex align-items-center gap-1"><i class="bi bi-check-circle-fill text-sky"></i> 3-minute 1-click setup</span>
+            <span class="d-flex align-items-center gap-1"><i class="bi bi-check-circle-fill text-sky"></i> SOC2 Type II & GDPR Ready</span>
+          </div>
+
+          <!-- Social Proof Avatar Badge -->
+          <div class="d-inline-flex align-items-center gap-3 p-2 px-3 rounded-pill bg-card-subtle border border-secondary-subtle mb-5">
+            <div class="avatar-stack d-flex">
+              <span class="avatar" style="background-image: url('https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=80&h=80&q=80')"></span>
+              <span class="avatar" style="background-image: url('https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=80&h=80&q=80')"></span>
+              <span class="avatar" style="background-image: url('https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=80&h=80&q=80')"></span>
+              <span class="avatar" style="background-image: url('https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=80&h=80&q=80')"></span>
+            </div>
+            <div class="text-start">
+              <div class="d-flex align-items-center gap-1 text-warning small">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <span class="fw-bold text-white ms-1">4.9/5</span>
+              </div>
+              <span class="small text-secondary">Loved by <strong>12,400+</strong> engineers & product leads</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Partner Logos -->
+      <div class="row justify-content-center mb-5">
+        <div class="col-lg-10 text-center">
+          <p class="text-uppercase tracking-widest text-muted small fw-semibold mb-3">Powering high-output teams at industry leaders</p>
+          <div class="logo-marquee d-flex align-items-center justify-content-center gap-4 gap-md-5 flex-wrap opacity-75">
+            <span class="partner-logo"><i class="bi bi-stripe me-1"></i> Stripe</span>
+            <span class="partner-logo"><i class="bi bi-github me-1"></i> GitHub</span>
+            <span class="partner-logo"><i class="bi bi-slack me-1"></i> Slack</span>
+            <span class="partner-logo"><i class="bi bi-layers-half me-1"></i> Linear</span>
+            <span class="partner-logo"><i class="bi bi-triangle-fill me-1"></i> Vercel</span>
+            <span class="partner-logo"><i class="bi bi-database me-1"></i> Datadog</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Interactive Widget: AI Workflow Preview -->
+      <div class="row justify-content-center" id="preview">
+        <div class="col-lg-11 col-xl-10">
+          <div class="preview-window shadow-2xl">
+            <!-- Window Topbar -->
+            <div class="preview-topbar d-flex align-items-center justify-content-between px-3 py-2 border-bottom border-secondary-subtle">
+              <div class="d-flex align-items-center gap-2">
+                <span class="dot dot-red"></span>
+                <span class="dot dot-yellow"></span>
+                <span class="dot dot-green"></span>
+                <span class="text-secondary small font-monospace ms-2 d-none d-sm-inline">flowsync.ai/workspace/sprint-48-orbit</span>
+              </div>
+              <div class="d-flex align-items-center gap-2">
+                <span class="badge bg-indigo-subtle text-indigo px-2 py-1 rounded d-flex align-items-center gap-1">
+                  <span class="pulse-indicator"></span> Autonomous Engine Active
+                </span>
+              </div>
+            </div>
+
+            <!-- Tab Switcher Navigation -->
+            <div class="preview-tabs d-flex align-items-center px-3 py-2 border-bottom border-secondary-subtle overflow-x-auto">
+              <button class="preview-tab-btn active" data-tab="auto-scheduling">
+                <i class="bi bi-calendar2-week me-1"></i> Auto-Scheduling
+              </button>
+              <button class="preview-tab-btn" data-tab="meeting-notes">
+                <i class="bi bi-soundwave me-1"></i> Meeting Notes AI
+              </button>
+              <button class="preview-tab-btn" data-tab="sprint-analytics">
+                <i class="bi bi-graph-up-arrow me-1"></i> Sprint Analytics
+              </button>
+            </div>
+
+            <!-- Tab Content Area -->
+            <div class="preview-body p-3 p-md-4">
+
+              <!-- TAB 1: Auto-Scheduling -->
+              <div class="tab-pane-custom active" id="tab-auto-scheduling">
+                <!-- AI Status Alert Banner -->
+                <div class="ai-alert-box p-3 rounded-3 mb-4 d-flex align-items-start gap-3">
+                  <div class="alert-icon-box">
+                    <i class="bi bi-lightning-charge-fill text-sky fs-5"></i>
+                  </div>
+                  <div class="flex-grow-1">
+                    <div class="d-flex align-items-center justify-content-between flex-wrap gap-2">
+                      <h6 class="text-white mb-0 fw-semibold">Autonomous Schedule Rebalanced</h6>
+                      <span class="badge bg-success-subtle text-success small">Resolved in 0.4s</span>
+                    </div>
+                    <p class="text-secondary small mb-2 mt-1">
+                      Detected 3 overlapping code reviews for <strong>Alex (Staff Eng)</strong> during a 4-hour focus block. FlowSync redistributed 2 PRs to <strong>Maya</strong> and protected <strong>Alex's deep work</strong> window.
+                    </p>
+                    <div class="d-flex gap-2 flex-wrap">
+                      <button class="btn btn-sm btn-sky-gradient text-dark fw-bold rounded-pill px-3 py-1" id="triggerRebalanceSim">
+                        <i class="bi bi-arrow-repeat me-1"></i> Simulate Rebalance
+                      </button>
+                      <span class="text-muted small align-self-center" id="simStatus">Sprint velocity optimized (+22%)</span>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Team Workload & Schedule Matrix -->
+                <div class="row g-3">
+                  <!-- Member 1 -->
+                  <div class="col-md-4">
+                    <div class="member-card p-3 rounded-3">
+                      <div class="d-flex align-items-center justify-content-between mb-2">
+                        <div class="d-flex align-items-center gap-2">
+                          <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=60&h=60&q=80" class="avatar-sm rounded-circle" alt="Alex Chen">
+                          <div>
+                            <div class="fw-semibold text-white small">Alex Chen</div>
+                            <div class="text-muted extra-small">Staff Architect</div>
+                          </div>
+                        </div>
+                        <span class="badge bg-indigo-subtle text-indigo" id="alexLoad">72% Load</span>
+                      </div>
+                      <div class="progress progress-sm mb-2">
+                        <div class="progress-bar bg-indigo-gradient" id="alexBar" style="width: 72%"></div>
+                      </div>
+                      <div class="schedule-pill protected mb-1">
+                        <i class="bi bi-shield-lock-fill text-indigo me-1"></i> 09:00 - 13:00 Protected Focus Block
+                      </div>
+                      <div class="schedule-pill task">
+                        <i class="bi bi-git text-sky me-1"></i> PR #412: Auth Microservice Review
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Member 2 -->
+                  <div class="col-md-4">
+                    <div class="member-card p-3 rounded-3">
+                      <div class="d-flex align-items-center justify-content-between mb-2">
+                        <div class="d-flex align-items-center gap-2">
+                          <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=60&h=60&q=80" class="avatar-sm rounded-circle" alt="Maya Lin">
+                          <div>
+                            <div class="fw-semibold text-white small">Maya Lin</div>
+                            <div class="text-muted extra-small">Senior Frontend</div>
+                          </div>
+                        </div>
+                        <span class="badge bg-sky-subtle text-sky" id="mayaLoad">68% Load</span>
+                      </div>
+                      <div class="progress progress-sm mb-2">
+                        <div class="progress-bar bg-sky-gradient" id="mayaBar" style="width: 68%"></div>
+                      </div>
+                      <div class="schedule-pill task mb-1">
+                        <i class="bi bi-layout-text-window-reverse text-sky me-1"></i> Design System Token Migration
+                      </div>
+                      <div class="schedule-pill reallocated">
+                        <i class="bi bi-arrow-down-left text-warning me-1"></i> Reassigned: Billing UI Review
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Member 3 -->
+                  <div class="col-md-4">
+                    <div class="member-card p-3 rounded-3">
+                      <div class="d-flex align-items-center justify-content-between mb-2">
+                        <div class="d-flex align-items-center gap-2">
+                          <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=60&h=60&q=80" class="avatar-sm rounded-circle" alt="David Brody">
+                          <div>
+                            <div class="fw-semibold text-white small">David Brody</div>
+                            <div class="text-muted extra-small">Backend Tech Lead</div>
+                          </div>
+                        </div>
+                        <span class="badge bg-success-subtle text-success" id="davidLoad">65% Load</span>
+                      </div>
+                      <div class="progress progress-sm mb-2">
+                        <div class="progress-bar bg-success" id="davidBar" style="width: 65%"></div>
+                      </div>
+                      <div class="schedule-pill task mb-1">
+                        <i class="bi bi-database-check text-success me-1"></i> DB Indexing & Read Replica Setup
+                      </div>
+                      <div class="schedule-pill task">
+                        <i class="bi bi-slack text-purple me-1"></i> Async Sprint Sync Recap
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- TAB 2: Meeting Notes AI -->
+              <div class="tab-pane-custom d-none" id="tab-meeting-notes">
+                <div class="meeting-notes-wrapper p-3 rounded-3 bg-dark-subtle border border-secondary-subtle">
+                  <!-- Header -->
+                  <div class="d-flex align-items-center justify-content-between flex-wrap gap-2 mb-3 pb-2 border-bottom border-secondary-subtle">
+                    <div class="d-flex align-items-center gap-2">
+                      <span class="recording-badge"><span class="rec-dot"></span> Live Transcribing</span>
+                      <h6 class="text-white mb-0 fw-semibold">Payment Gateway Refactor & SLA Architecture</h6>
+                    </div>
+                    <span class="text-secondary small font-monospace">Duration: 24m 12s &bull; Zoom Audio Stream</span>
+                  </div>
+
+                  <!-- Waveform Simulation -->
+                  <div class="waveform-box mb-3 d-flex align-items-center gap-1">
+                    <span class="bar h-40"></span>
+                    <span class="bar h-70"></span>
+                    <span class="bar h-90"></span>
+                    <span class="bar h-50"></span>
+                    <span class="bar h-80"></span>
+                    <span class="bar h-100"></span>
+                    <span class="bar h-60"></span>
+                    <span class="bar h-75"></span>
+                    <span class="bar h-45"></span>
+                    <span class="bar h-85"></span>
+                    <span class="bar h-60"></span>
+                    <span class="bar h-30"></span>
+                    <span class="text-secondary small ms-3 fst-italic">"Let's make sure the webhook idempotent retry handler retries automatically on 503s..."</span>
+                  </div>
+
+                  <!-- Extracted Tasks Section -->
+                  <div class="extracted-tasks-box p-3 rounded-2 bg-card mb-3">
+                    <div class="d-flex align-items-center justify-content-between mb-3">
+                      <span class="fw-semibold text-sky small text-uppercase tracking-wider">
+                        <i class="bi bi-magic me-1"></i> 3 Action Items Identified by FlowSync AI
+                      </span>
+                      <span class="badge bg-indigo-subtle text-indigo" id="jiraSyncStatus">Ready to sync</span>
+                    </div>
+
+                    <div class="task-item-row p-2 mb-2 rounded d-flex align-items-center justify-content-between flex-wrap gap-2">
+                      <div class="d-flex align-items-center gap-2">
+                        <input class="form-check-input mt-0" type="checkbox" checked id="item1">
+                        <label for="item1" class="text-white small fw-medium mb-0">Implement idempotent webhook retry handler with exponential backoff</label>
+                      </div>
+                      <div class="d-flex align-items-center gap-2">
+                        <span class="badge bg-danger-subtle text-danger extra-small">Urgent</span>
+                        <span class="badge bg-secondary-subtle text-secondary extra-small">@David Brody</span>
+                        <span class="badge bg-primary-subtle text-primary extra-small">Jira #PAY-304</span>
+                      </div>
+                    </div>
+
+                    <div class="task-item-row p-2 mb-2 rounded d-flex align-items-center justify-content-between flex-wrap gap-2">
+                      <div class="d-flex align-items-center gap-2">
+                        <input class="form-check-input mt-0" type="checkbox" checked id="item2">
+                        <label for="item2" class="text-white small fw-medium mb-0">Add Datadog synthetic latency alerts for payment endpoint</label>
+                      </div>
+                      <div class="d-flex align-items-center gap-2">
+                        <span class="badge bg-warning-subtle text-warning extra-small">High</span>
+                        <span class="badge bg-secondary-subtle text-secondary extra-small">@Maya Lin</span>
+                        <span class="badge bg-primary-subtle text-primary extra-small">Jira #MON-112</span>
+                      </div>
+                    </div>
+
+                    <div class="task-item-row p-2 rounded d-flex align-items-center justify-content-between flex-wrap gap-2">
+                      <div class="d-flex align-items-center gap-2">
+                        <input class="form-check-input mt-0" type="checkbox" checked id="item3">
+                        <label for="item3" class="text-white small fw-medium mb-0">Update API developer documentation with response headers</label>
+                      </div>
+                      <div class="d-flex align-items-center gap-2">
+                        <span class="badge bg-info-subtle text-info extra-small">Medium</span>
+                        <span class="badge bg-secondary-subtle text-secondary extra-small">@Alex Chen</span>
+                        <span class="badge bg-primary-subtle text-primary extra-small">Jira #DOC-89</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- 1-Click Action Button -->
+                  <div class="d-flex align-items-center justify-content-between flex-wrap gap-2">
+                    <span class="text-secondary small">Automatically generated from speech in 1.8 seconds.</span>
+                    <button class="btn btn-indigo-gradient text-white btn-sm px-3 py-2 rounded-pill fw-semibold" id="syncToJiraBtn">
+                      <i class="bi bi-send-check me-1"></i> Push 3 Tasks to Jira & Slack
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- TAB 3: Sprint Analytics -->
+              <div class="tab-pane-custom d-none" id="tab-sprint-analytics">
+                <div class="analytics-wrapper">
+                  <!-- KPI Cards -->
+                  <div class="row g-3 mb-4">
+                    <div class="col-sm-4">
+                      <div class="metric-mini-card p-3 rounded-3">
+                        <span class="text-muted extra-small text-uppercase tracking-wider">Sprint Velocity</span>
+                        <div class="d-flex align-items-baseline gap-2 mt-1">
+                          <h4 class="text-white fw-bold mb-0">84 pts</h4>
+                          <span class="badge bg-success-subtle text-success small"><i class="bi bi-arrow-up"></i> +34.2%</span>
+                        </div>
+                        <span class="text-secondary extra-small">Target: 68 points achieved</span>
+                      </div>
+                    </div>
+                    <div class="col-sm-4">
+                      <div class="metric-mini-card p-3 rounded-3">
+                        <span class="text-muted extra-small text-uppercase tracking-wider">Avg PR Cycle Time</span>
+                        <div class="d-flex align-items-baseline gap-2 mt-1">
+                          <h4 class="text-white fw-bold mb-0">3.2 hrs</h4>
+                          <span class="badge bg-success-subtle text-success small"><i class="bi bi-arrow-down"></i> -58%</span>
+                        </div>
+                        <span class="text-secondary extra-small">Industry avg: 14.8 hrs</span>
+                      </div>
+                    </div>
+                    <div class="col-sm-4">
+                      <div class="metric-mini-card p-3 rounded-3">
+                        <span class="text-muted extra-small text-uppercase tracking-wider">Deep Work Preserved</span>
+                        <div class="d-flex align-items-baseline gap-2 mt-1">
+                          <h4 class="text-white fw-bold mb-0">19.4 hrs</h4>
+                          <span class="badge bg-sky-subtle text-sky small">Per dev/wk</span>
+                        </div>
+                        <span class="text-secondary extra-small">+4.8 hrs vs previous sprint</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Simulated Burndown Chart -->
+                  <div class="burndown-chart-card p-3 rounded-3 mb-3">
+                    <div class="d-flex align-items-center justify-content-between mb-2">
+                      <h6 class="text-white small fw-semibold mb-0">Sprint 48 Burndown Trajectory</h6>
+                      <div class="d-flex align-items-center gap-3 extra-small text-secondary">
+                        <span class="d-flex align-items-center gap-1"><span class="chart-legend ideal"></span> Ideal Pace</span>
+                        <span class="d-flex align-items-center gap-1"><span class="chart-legend actual"></span> FlowSync AI Actual</span>
+                      </div>
+                    </div>
+                    <!-- SVG Chart -->
+                    <div class="chart-svg-container">
+                      <svg viewBox="0 0 500 120" class="w-100" preserveAspectRatio="none">
+                        <defs>
+                          <linearGradient id="chartGradient" x1="0" y1="0" x2="0" y2="1">
+                            <stop offset="0%" stop-color="#6366F1" stop-opacity="0.4"/>
+                            <stop offset="100%" stop-color="#38BDF8" stop-opacity="0.0"/>
+                          </linearGradient>
+                        </defs>
+                        <!-- Grid Lines -->
+                        <line x1="0" y1="20" x2="500" y2="20" stroke="rgba(255,255,255,0.06)" stroke-dasharray="3,3"/>
+                        <line x1="0" y1="60" x2="500" y2="60" stroke="rgba(255,255,255,0.06)" stroke-dasharray="3,3"/>
+                        <line x1="0" y1="100" x2="500" y2="100" stroke="rgba(255,255,255,0.06)" stroke-dasharray="3,3"/>
+                        <!-- Ideal Guideline -->
+                        <line x1="10" y1="20" x2="490" y2="110" stroke="#64748B" stroke-dasharray="5,5" stroke-width="1.5"/>
+                        <!-- Area Fill -->
+                        <polygon points="10,20 100,32 180,48 260,52 340,78 420,95 490,108 490,120 10,120" fill="url(#chartGradient)"/>
+                        <!-- Actual Trajectory Line -->
+                        <polyline points="10,20 100,32 180,48 260,52 340,78 420,95 490,108" fill="none" stroke="#38BDF8" stroke-width="2.5" stroke-linecap="round"/>
+                        <!-- Data Points -->
+                        <circle cx="10" cy="20" r="3.5" fill="#38BDF8"/>
+                        <circle cx="180" cy="48" r="3.5" fill="#38BDF8"/>
+                        <circle cx="340" cy="78" r="3.5" fill="#38BDF8"/>
+                        <circle cx="490" cy="108" r="4.5" fill="#6366F1" stroke="#FFFFFF" stroke-width="1.5"/>
+                      </svg>
+                    </div>
+                  </div>
+
+                  <!-- AI Proactive Insight -->
+                  <div class="ai-insight-strip p-2 px-3 rounded-2 d-flex align-items-center justify-content-between flex-wrap gap-2">
+                    <span class="small text-secondary">
+                      <i class="bi bi-lightbulb-fill text-warning me-1"></i>
+                      <strong class="text-white">AI Predictive Finding:</strong> Auth module PRs are taking 2.2x longer to review. FlowSync recommends breaking future issues into &lt;250 LOC chunks.
+                    </span>
+                    <span class="badge bg-sky-subtle text-sky small">Automated Recommendation</span>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Impact & Metrics Row -->
+  <section class="metrics-section py-5 border-top border-bottom border-secondary-subtle">
+    <div class="container">
+      <div class="row g-4 text-center">
+        <div class="col-6 col-lg-3">
+          <div class="metric-card p-3">
+            <h2 class="display-5 fw-extrabold text-white mb-1"><span class="counter" data-target="12.4">12.4</span><span class="text-sky">h</span></h2>
+            <p class="text-secondary small mb-0">Saved per engineer every week</p>
+          </div>
+        </div>
+        <div class="col-6 col-lg-3">
+          <div class="metric-card p-3">
+            <h2 class="display-5 fw-extrabold text-white mb-1"><span class="counter" data-target="42">42</span><span class="text-indigo">%</span></h2>
+            <p class="text-secondary small mb-0">Reduction in sprint cycle time</p>
+          </div>
+        </div>
+        <div class="col-6 col-lg-3">
+          <div class="metric-card p-3">
+            <h2 class="display-5 fw-extrabold text-white mb-1"><span class="counter" data-target="99.4">99.4</span><span class="text-sky">%</span></h2>
+            <p class="text-secondary small mb-0">Autonomous routing precision</p>
+          </div>
+        </div>
+        <div class="col-6 col-lg-3">
+          <div class="metric-card p-3">
+            <h2 class="display-5 fw-extrabold text-white mb-1"><span class="counter" data-target="3.8">3.8</span><span class="text-indigo">x</span></h2>
+            <p class="text-secondary small mb-0">Faster roadmap feature delivery</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Grid (3x2) -->
+  <section class="features-section py-5 position-relative" id="features">
+    <div class="container py-4">
+      <!-- Section Header -->
+      <div class="row justify-content-center text-center mb-5">
+        <div class="col-lg-8">
+          <span class="badge bg-indigo-subtle text-indigo px-3 py-1 rounded-pill mb-2 fw-semibold text-uppercase tracking-wider small">
+            Engineered For B2B Scale
+          </span>
+          <h2 class="display-5 fw-bold text-white mb-3">
+            Everything You Need to Automate Routine &amp; Accelerate Shipping
+          </h2>
+          <p class="lead text-secondary">
+            Traditional project trackers require constant manual hygiene. FlowSync AI runs autonomously in the background, keeping your roadmap aligned with code commits.
+          </p>
+        </div>
+      </div>
+
+      <!-- 3x2 Grid Cards -->
+      <div class="row g-4">
+        <!-- Feature 1: Smart Task Routing -->
+        <div class="col-md-6 col-lg-4">
+          <div class="feature-card h-100 p-4 rounded-4">
+            <div class="feature-icon-box mb-4">
+              <i class="bi bi-cpu-fill text-sky fs-3"></i>
+            </div>
+            <h4 class="text-white fw-bold mb-2">Smart Task Routing</h4>
+            <p class="text-secondary mb-3">
+              FlowSync analyzes codebase topology, engineer historical velocity, and current cognitive bandwidth to automatically route Jira &amp; GitHub issues to the best-fit owner.
+            </p>
+            <ul class="feature-list list-unstyled small text-secondary">
+              <li><i class="bi bi-check2 text-sky me-2"></i> Zero manager triage overhead</li>
+              <li><i class="bi bi-check2 text-sky me-2"></i> Context-aware code ownership</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Feature 2: Instant Meeting Summaries -->
+        <div class="col-md-6 col-lg-4">
+          <div class="feature-card h-100 p-4 rounded-4">
+            <div class="feature-icon-box mb-4">
+              <i class="bi bi-soundwave text-indigo fs-3"></i>
+            </div>
+            <h4 class="text-white fw-bold mb-2">Instant Meeting Intelligence</h4>
+            <p class="text-secondary mb-3">
+              Turn verbal discussions from Zoom, Teams, and Google Meet into structured tickets, acceptance criteria, and Slack recaps without taking a single note.
+            </p>
+            <ul class="feature-list list-unstyled small text-secondary">
+              <li><i class="bi bi-check2 text-indigo me-2"></i> Automatic assignee tagging</li>
+              <li><i class="bi bi-check2 text-indigo me-2"></i> 99.1% engineering dialect accuracy</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Feature 3: Slack & GitHub Sync -->
+        <div class="col-md-6 col-lg-4">
+          <div class="feature-card h-100 p-4 rounded-4">
+            <div class="feature-icon-box mb-4">
+              <i class="bi bi-arrow-left-right text-sky fs-3"></i>
+            </div>
+            <h4 class="text-white fw-bold mb-2">Slack &amp; GitHub 2-Way Sync</h4>
+            <p class="text-secondary mb-3">
+              Bi-directional state synchronization. Update task statuses from Slack threads or git commit messages. Never open Jira just to click "In Review" again.
+            </p>
+            <ul class="feature-list list-unstyled small text-secondary">
+              <li><i class="bi bi-check2 text-sky me-2"></i> In-thread slash command actions</li>
+              <li><i class="bi bi-check2 text-sky me-2"></i> Commit &amp; PR branch linkage</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Feature 4: Predictive Workload Balancing -->
+        <div class="col-md-6 col-lg-4">
+          <div class="feature-card h-100 p-4 rounded-4">
+            <div class="feature-icon-box mb-4">
+              <i class="bi bi-speedometer2 text-indigo fs-3"></i>
+            </div>
+            <h4 class="text-white fw-bold mb-2">Predictive Workload Balancing</h4>
+            <p class="text-secondary mb-3">
+              Detect team burnout before it causes missed milestones. FlowSync flags review bottlenecks, after-hours commits, and calendar fragmentation in advance.
+            </p>
+            <ul class="feature-list list-unstyled small text-secondary">
+              <li><i class="bi bi-check2 text-indigo me-2"></i> Proactive calendar defragmentation</li>
+              <li><i class="bi bi-check2 text-indigo me-2"></i> Deep work protection filters</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Feature 5: Cross-Team Orchestration -->
+        <div class="col-md-6 col-lg-4">
+          <div class="feature-card h-100 p-4 rounded-4">
+            <div class="feature-icon-box mb-4">
+              <i class="bi bi-diagram-3-fill text-sky fs-3"></i>
+            </div>
+            <h4 class="text-white fw-bold mb-2">Cross-Team Orchestration</h4>
+            <p class="text-secondary mb-3">
+              Unify frontend, backend, design, and DevOps dependencies into a synchronized real-time dependency graph. Receive automated warnings when an upstream PR is delayed.
+            </p>
+            <ul class="feature-list list-unstyled small text-secondary">
+              <li><i class="bi bi-check2 text-sky me-2"></i> Dynamic critical path analysis</li>
+              <li><i class="bi bi-check2 text-sky me-2"></i> Multi-repository dependency mapping</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Feature 6: Enterprise Security -->
+        <div class="col-md-6 col-lg-4">
+          <div class="feature-card h-100 p-4 rounded-4">
+            <div class="feature-icon-box mb-4">
+              <i class="bi bi-shield-lock-fill text-indigo fs-3"></i>
+            </div>
+            <h4 class="text-white fw-bold mb-2">Enterprise-Grade Security</h4>
+            <p class="text-secondary mb-3">
+              Bank-grade data encryption at rest and in transit. Strict zero-data retention policies mean your proprietary codebase and chats are never used to train external LLMs.
+            </p>
+            <ul class="feature-list list-unstyled small text-secondary">
+              <li><i class="bi bi-check2 text-indigo me-2"></i> SOC2 Type II &amp; ISO 27001</li>
+              <li><i class="bi bi-check2 text-indigo me-2"></i> SAML SSO &amp; SCIM provisioning</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works Section -->
+  <section class="how-it-works py-5" id="how-it-works">
+    <div class="container py-4">
+      <div class="row justify-content-center text-center mb-5">
+        <div class="col-lg-8">
+          <span class="badge bg-sky-subtle text-sky px-3 py-1 rounded-pill mb-2 fw-semibold text-uppercase tracking-wider small">
+            Simple 3-Step Integration
+          </span>
+          <h2 class="display-5 fw-bold text-white mb-3">How FlowSync Operates in Your Stack</h2>
+          <p class="lead text-secondary">Get up and running in minutes without changing your team's established habits.</p>
+        </div>
+      </div>
+
+      <div class="row g-4 position-relative">
+        <!-- Step 1 -->
+        <div class="col-lg-4">
+          <div class="step-card p-4 rounded-4 h-100">
+            <div class="step-badge mb-3">01</div>
+            <h4 class="text-white fw-bold mb-2">Connect in 60 Seconds</h4>
+            <p class="text-secondary mb-0">
+              One-click OAuth authorization with GitHub, GitLab, Jira, Linear, and Slack. No custom scripts, complex webhooks, or lengthy configurations required.
+            </p>
+          </div>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="col-lg-4">
+          <div class="step-card p-4 rounded-4 h-100">
+            <div class="step-badge mb-3">02</div>
+            <h4 class="text-white fw-bold mb-2">AI Maps Team Rhythms</h4>
+            <p class="text-secondary mb-0">
+              FlowSync passively studies your historical sprint cycles, pull request velocity, meeting cadences, and code reviewer expertise to construct a tailored team graph.
+            </p>
+          </div>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="col-lg-4">
+          <div class="step-card p-4 rounded-4 h-100">
+            <div class="step-badge mb-3">03</div>
+            <h4 class="text-white fw-bold mb-2">Autonomous Optimization</h4>
+            <p class="text-secondary mb-0">
+              Sit back as FlowSync dynamically balances workloads, routes incoming tickets, summarizes standups, and preserves 4-hour uninterrupted deep focus blocks.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Pricing Calculator -->
+  <section class="pricing-section py-5 position-relative" id="pricing">
+    <div class="container py-4">
+      <!-- Section Header -->
+      <div class="row justify-content-center text-center mb-4">
+        <div class="col-lg-8">
+          <span class="badge bg-indigo-subtle text-indigo px-3 py-1 rounded-pill mb-2 fw-semibold text-uppercase tracking-wider small">
+            Transparent, Predictable ROI
+          </span>
+          <h2 class="display-5 fw-bold text-white mb-3">
+            Invest in Velocity, Save Weeks of Work
+          </h2>
+          <p class="lead text-secondary">
+            Simple seat-based pricing that scales with your engineering department. Every plan comes with a 14-day free trial.
+          </p>
+        </div>
+      </div>
+
+      <!-- Billing Cycle Switcher -->
+      <div class="d-flex align-items-center justify-content-center gap-3 mb-4">
+        <span class="fw-semibold text-secondary billing-label" id="monthlyLabel">Monthly</span>
+        <div class="form-check form-switch custom-pricing-switch mb-0">
+          <input class="form-check-input" type="checkbox" role="switch" id="billingToggle">
+        </div>
+        <div class="d-flex align-items-center gap-2">
+          <span class="fw-semibold text-white billing-label" id="yearlyLabel">Yearly</span>
+          <span class="badge bg-indigo-gradient text-white px-2 py-1 rounded-pill small">Save 20% + 2 Mo Free</span>
+        </div>
+      </div>
+
+      <!-- Interactive Team Size Slider -->
+      <div class="row justify-content-center mb-5">
+        <div class="col-md-8 col-lg-6">
+          <div class="slider-box p-3 rounded-4 bg-card border border-secondary-subtle">
+            <div class="d-flex justify-content-between align-items-center mb-2">
+              <span class="text-secondary small fw-medium">Select your team size:</span>
+              <span class="badge bg-sky-subtle text-sky fw-bold fs-6" id="teamSizeDisplay">15 Engineers</span>
+            </div>
+            <input type="range" class="form-range custom-range" min="5" max="100" step="5" value="15" id="teamSizeRange">
+            <div class="d-flex justify-content-between text-muted extra-small mt-1">
+              <span>5 seats</span>
+              <span>25 seats</span>
+              <span>50 seats</span>
+              <span>100+ seats</span>
+            </div>
+            <!-- Dynamic ROI preview -->
+            <div class="roi-strip mt-3 pt-2 border-top border-secondary-subtle d-flex align-items-center justify-content-between flex-wrap gap-2">
+              <span class="extra-small text-secondary"><i class="bi bi-clock-history text-sky"></i> Est. Engineering Hours Saved: <strong class="text-white" id="hoursSavedVal">186 hrs/mo</strong></span>
+              <span class="extra-small text-secondary"><i class="bi bi-cash-stack text-success"></i> Est. Value Created: <strong class="text-success" id="roiVal">$13,950/mo</strong></span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3 Pricing Cards -->
+      <div class="row g-4 align-items-stretch">
+        
+        <!-- Starter Plan -->
+        <div class="col-lg-4">
+          <div class="pricing-card h-100 p-4 rounded-4 d-flex flex-column justify-content-between">
+            <div>
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <h4 class="text-white fw-bold mb-0">Starter</h4>
+                <span class="badge bg-secondary-subtle text-secondary small">For Small Squads</span>
+              </div>
+              <p class="text-secondary small mb-4">Essential autonomous scheduling for fast-moving early engineering teams.</p>
+              
+              <div class="price-box mb-4">
+                <div class="d-flex align-items-baseline gap-1">
+                  <span class="currency text-secondary fs-4 fw-bold">$</span>
+                  <span class="price-val display-5 fw-extrabold text-white" id="priceStarter">29</span>
+                  <span class="period text-secondary small">/ seat / month</span>
+                </div>
+                <div class="billed-period text-muted extra-small mt-1" id="billedStarter">Billed monthly</div>
+              </div>
+
+              <hr class="border-secondary-subtle my-3">
+
+              <ul class="pricing-features list-unstyled small text-secondary mb-4">
+                <li><i class="bi bi-check-lg text-sky me-2"></i> Up to 15 team members</li>
+                <li><i class="bi bi-check-lg text-sky me-2"></i> Smart Task Routing (Jira &amp; Linear)</li>
+                <li><i class="bi bi-check-lg text-sky me-2"></i> Slack &amp; GitHub 2-Way Sync</li>
+                <li><i class="bi bi-check-lg text-sky me-2"></i> 10 hours AI voice meeting processing/mo</li>
+                <li><i class="bi bi-check-lg text-sky me-2"></i> Basic sprint burn-down analytics</li>
+                <li><i class="bi bi-check-lg text-sky me-2"></i> Standard community support</li>
+              </ul>
+            </div>
+
+            <button class="btn btn-outline-glass w-100 py-3 rounded-pill fw-semibold text-white open-trial-modal" data-plan="Starter">
+              Start 14-Day Free Trial
+            </button>
+          </div>
+        </div>
+
+        <!-- Pro Plan (Popular Highlight) -->
+        <div class="col-lg-4">
+          <div class="pricing-card featured h-100 p-4 rounded-4 d-flex flex-column justify-content-between position-relative">
+            <div class="popular-ribbon">Most Popular</div>
+            
+            <div>
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <h4 class="text-white fw-bold mb-0">Pro</h4>
+                <span class="badge bg-indigo-subtle text-indigo small">High Velocity</span>
+              </div>
+              <p class="text-secondary small mb-4">Complete autonomous workflow intelligence with predictive burnout prevention.</p>
+              
+              <div class="price-box mb-4">
+                <div class="d-flex align-items-baseline gap-1">
+                  <span class="currency text-secondary fs-4 fw-bold">$</span>
+                  <span class="price-val display-5 fw-extrabold text-white" id="pricePro">79</span>
+                  <span class="period text-secondary small">/ seat / month</span>
+                </div>
+                <div class="billed-period text-muted extra-small mt-1" id="billedPro">Billed monthly</div>
+              </div>
+
+              <hr class="border-secondary-subtle my-3">
+
+              <ul class="pricing-features list-unstyled small text-secondary mb-4">
+                <li><i class="bi bi-check-lg text-sky me-2"></i> <strong>Unlimited</strong> team members</li>
+                <li><i class="bi bi-check-lg text-sky me-2"></i> <strong>Everything in Starter, plus:</strong></li>
+                <li><i class="bi bi-check-lg text-sky me-2"></i> Unlimited AI voice meeting transcripts</li>
+                <li><i class="bi bi-check-lg text-sky me-2"></i> Predictive Workload &amp; Burnout alerts</li>
+                <li><i class="bi bi-check-lg text-sky me-2"></i> Cross-team dependency matrix</li>
+                <li><i class="bi bi-check-lg text-sky me-2"></i> Protected 4-hour deep focus blocks</li>
+                <li><i class="bi bi-check-lg text-sky me-2"></i> Priority 24/7 Slack support channel</li>
+              </ul>
+            </div>
+
+            <button class="btn btn-primary-gradient w-100 py-3 rounded-pill fw-bold shadow-lg open-trial-modal" data-plan="Pro">
+              Start 14-Day Free Trial
+            </button>
+          </div>
+        </div>
+
+        <!-- Enterprise Plan -->
+        <div class="col-lg-4">
+          <div class="pricing-card h-100 p-4 rounded-4 d-flex flex-column justify-content-between">
+            <div>
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <h4 class="text-white fw-bold mb-0">Enterprise</h4>
+                <span class="badge bg-secondary-subtle text-secondary small">Scale &amp; Security</span>
+              </div>
+              <p class="text-secondary small mb-4">Bespoke SLA, dedicated security isolation, and custom internal model fine-tuning.</p>
+              
+              <div class="price-box mb-4">
+                <div class="d-flex align-items-baseline gap-1">
+                  <span class="currency text-secondary fs-4 fw-bold">$</span>
+                  <span class="price-val display-5 fw-extrabold text-white" id="priceEnterprise">199</span>
+                  <span class="period text-secondary small">/ seat / month</span>
+                </div>
+                <div class="billed-period text-muted extra-small mt-1" id="billedEnterprise">Billed monthly</div>
+              </div>
+
+              <hr class="border-secondary-subtle my-3">
+
+              <ul class="pricing-features list-unstyled small text-secondary mb-4">
+                <li><i class="bi bi-check-lg text-sky me-2"></i> Custom seat volume discounts</li>
+                <li><i class="bi bi-check-lg text-sky me-2"></i> <strong>Everything in Pro, plus:</strong></li>
+                <li><i class="bi bi-check-lg text-sky me-2"></i> Dedicated Customer Success Manager</li>
+                <li><i class="bi bi-check-lg text-sky me-2"></i> SAML 2.0 SSO &amp; SCIM User Provisioning</li>
+                <li><i class="bi bi-check-lg text-sky me-2"></i> Custom private LLM deployments (VPC/On-Prem)</li>
+                <li><i class="bi bi-check-lg text-sky me-2"></i> 99.99% Guaranteed Uptime SLA</li>
+                <li><i class="bi bi-check-lg text-sky me-2"></i> Custom Data Processing Agreement (DPA)</li>
+              </ul>
+            </div>
+
+            <button class="btn btn-outline-glass w-100 py-3 rounded-pill fw-semibold text-white open-trial-modal" data-plan="Enterprise">
+              Talk to Enterprise Sales
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Social Proof & Testimonials -->
+  <section class="testimonials-section py-5 border-top border-secondary-subtle">
+    <div class="container py-4">
+      <div class="row justify-content-center text-center mb-5">
+        <div class="col-lg-8">
+          <span class="badge bg-sky-subtle text-sky px-3 py-1 rounded-pill mb-2 fw-semibold text-uppercase tracking-wider small">
+            Customer Validation
+          </span>
+          <h2 class="display-5 fw-bold text-white mb-3">Loved by Engineering Leaders</h2>
+          <p class="lead text-secondary">Discover how high-output teams ship 40% faster with FlowSync AI.</p>
+        </div>
+      </div>
+
+      <div class="row g-4">
+        <!-- Testimonial 1 -->
+        <div class="col-md-4">
+          <div class="testimonial-card p-4 rounded-4 h-100 d-flex flex-column justify-content-between">
+            <div>
+              <div class="stars mb-3 text-warning">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </div>
+              <p class="text-secondary small fst-italic mb-4">
+                "FlowSync AI eliminated our weekly 2-hour sprint planning slog entirely. The task routing is so accurate that our engineers immediately trust their backlog assignments."
+              </p>
+            </div>
+            <div class="d-flex align-items-center gap-3">
+              <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=80&h=80&q=80" class="avatar-md rounded-circle" alt="Elena Vance">
+              <div>
+                <h6 class="text-white mb-0 fw-semibold">Elena Vance</h6>
+                <div class="text-secondary extra-small">VP of Engineering at CloudScale</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 2 -->
+        <div class="col-md-4">
+          <div class="testimonial-card p-4 rounded-4 h-100 d-flex flex-column justify-content-between">
+            <div>
+              <div class="stars mb-3 text-warning">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </div>
+              <p class="text-secondary small fst-italic mb-4">
+                "The meeting-to-Jira action extraction feels like pure sorcery. We wrap up architectural discussions, and within 30 seconds all tickets with assignees and context are queued up."
+              </p>
+            </div>
+            <div class="d-flex align-items-center gap-3">
+              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=80&h=80&q=80" class="avatar-md rounded-circle" alt="Marcus Thorne">
+              <div>
+                <h6 class="text-white mb-0 fw-semibold">Marcus Thorne</h6>
+                <div class="text-secondary extra-small">Head of Product at ApexDev</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 3 -->
+        <div class="col-md-4">
+          <div class="testimonial-card p-4 rounded-4 h-100 d-flex flex-column justify-content-between">
+            <div>
+              <div class="stars mb-3 text-warning">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </div>
+              <p class="text-secondary small fst-italic mb-4">
+                "As an engineering director, burnout protection has been our savior. FlowSync automatically redistributed 18 pull requests last month and protected our senior staff focus blocks."
+              </p>
+            </div>
+            <div class="d-flex align-items-center gap-3">
+              <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=80&h=80&q=80" class="avatar-md rounded-circle" alt="David Sterling">
+              <div>
+                <h6 class="text-white mb-0 fw-semibold">David Sterling</h6>
+                <div class="text-secondary extra-small">CTO at StackPulse</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Accordion Section -->
+  <section class="faq-section py-5" id="faq">
+    <div class="container py-4">
+      <div class="row justify-content-center text-center mb-5">
+        <div class="col-lg-8">
+          <span class="badge bg-indigo-subtle text-indigo px-3 py-1 rounded-pill mb-2 fw-semibold text-uppercase tracking-wider small">
+            Common Inquiries
+          </span>
+          <h2 class="display-5 fw-bold text-white mb-3">Frequently Asked Questions</h2>
+          <p class="lead text-secondary">Everything you need to know about FlowSync AI's setup, data governance, and capabilities.</p>
+        </div>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-lg-9">
+          <div class="accordion custom-accordion" id="faqAccordion">
+
+            <!-- Question 1 -->
+            <div class="accordion-item mb-3">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                  How does FlowSync AI connect with our existing tools (Slack, Jira, GitHub)?
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                <div class="accordion-body text-secondary">
+                  FlowSync integrates via standard 1-click OAuth2 apps in the official Slack App Directory, GitHub Marketplace, and Atlassian Marketplace. It requires zero custom webhooks or maintenance scripts. You can connect all three services in less than 3 minutes.
+                </div>
+              </div>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="accordion-item mb-3">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Is our proprietary code or meeting audio used to train AI models?
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+                <div class="accordion-body text-secondary">
+                  <strong>Strictly No.</strong> Under our SOC2 Type II certification and Enterprise Data Processing Addendum (DPA), zero customer data, pull requests, meeting recordings, or tickets are retained for model training. All AI inference is performed in ephemeral sandbox memory with zero retention.
+                </div>
+              </div>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="accordion-item mb-3">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Can we customize task routing rules and approval boundaries?
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+                <div class="accordion-body text-secondary">
+                  Yes! FlowSync provides an intuitive rule editor alongside its autonomous AI suggestions. You can set custom CODEOWNERS priority lists, declare required minimum focus blocks, define triage rotation schedules, and restrict certain confidential repositories from automated routing.
+                </div>
+              </div>
+            </div>
+
+            <!-- Question 4 -->
+            <div class="accordion-item mb-3">
+              <h2 class="accordion-header" id="headingFour">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                  How does the 14-day free trial work?
+                </button>
+              </h2>
+              <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
+                <div class="accordion-body text-secondary">
+                  Your trial unlocks the full capability of the <strong>Pro Plan</strong> for your entire team. No credit card is required to begin. At the end of the 14 days, you can choose to upgrade to a paid tier or downgrade smoothly to our free developer tier without losing workspace history.
+                </div>
+              </div>
+            </div>
+
+            <!-- Question 5 -->
+            <div class="accordion-item mb-3">
+              <h2 class="accordion-header" id="headingFive">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                  Does FlowSync support on-premise Jira or self-hosted GitLab?
+                </button>
+              </h2>
+              <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#faqAccordion">
+                <div class="accordion-body text-secondary">
+                  Yes, for Enterprise plan customers, we provide hybrid and on-premise connectors compatible with Jira Data Center and self-hosted GitLab Enterprise. Our security team can provide a direct architecture review for your DevOps and security compliance teams.
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- High-Converting Bottom CTA Banner -->
+  <section class="cta-banner-section py-5">
+    <div class="container py-3">
+      <div class="cta-banner-card p-4 p-md-5 rounded-4 text-center position-relative overflow-hidden">
+        <div class="cta-glow-element"></div>
+        <div class="position-relative z-1">
+          <span class="badge bg-white text-dark px-3 py-1 rounded-pill mb-3 fw-bold small">
+            Ready to Accelerate?
+          </span>
+          <h2 class="display-4 fw-extrabold text-white mb-3">
+            Join 12,000+ Engineers Shipping with FlowSync AI
+          </h2>
+          <p class="lead text-secondary mb-4 mx-auto max-w-600">
+            Reclaim 12+ hours every week and eliminate sprint chaos. Start your 14-day full access trial in under 3 minutes.
+          </p>
+          <div class="d-flex flex-column flex-sm-row align-items-center justify-content-center gap-3">
+            <button class="btn btn-primary-gradient btn-lg px-4 py-3 rounded-pill fw-bold shadow-lg open-trial-modal" data-plan="Pro">
+              <span>Start Free 14-Day Trial</span>
+              <i class="bi bi-arrow-right ms-2"></i>
+            </button>
+            <a href="#faq" class="btn btn-outline-glass btn-lg px-4 py-3 rounded-pill fw-semibold text-white">
+              <span>Read Documentation</span>
+            </a>
+          </div>
+          <p class="text-secondary extra-small mt-3 mb-0">No credit card required &bull; Cancel anytime &bull; 99.99% SLA</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modern Dark Footer -->
+  <footer class="footer py-5 border-top border-secondary-subtle">
+    <div class="container">
+      <div class="row g-4 mb-5">
+        <!-- Brand column -->
+        <div class="col-lg-4">
+          <a class="d-flex align-items-center gap-2 text-decoration-none mb-3" href="#">
+            <svg width="24" height="24" viewBox="0 0 28 28" fill="none">
+              <rect width="28" height="28" rx="8" fill="url(#footer_logo_grad)" />
+              <path d="M7 14C7 10.134 10.134 7 14 7V10C11.7909 10 10 11.7909 10 14H7Z" fill="white" />
+              <circle cx="14" cy="14" r="3" fill="#38BDF8" />
+              <defs>
+                <linearGradient id="footer_logo_grad" x1="0" y1="0" x2="28" y2="28" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#6366F1" />
+                  <stop offset="1" stop-color="#38BDF8" />
+                </linearGradient>
+              </defs>
+            </svg>
+            <span class="brand-text fs-5">FlowSync<span class="brand-accent">AI</span></span>
+          </a>
+          <p class="text-secondary small mb-3">
+            The autonomous task intelligence platform built for modern engineering organizations. Turn sprint overhead into automated delivery speed.
+          </p>
+          <div class="system-status-pill d-inline-flex align-items-center gap-2 px-3 py-1 rounded-pill small">
+            <span class="status-pulse-green"></span>
+            <span class="text-secondary extra-small">All Systems Operational &bull; 99.99% Uptime</span>
+          </div>
+        </div>
+
+        <!-- Links Columns -->
+        <div class="col-6 col-lg-2">
+          <h6 class="text-white fw-bold mb-3 small text-uppercase tracking-wider">Product</h6>
+          <ul class="list-unstyled footer-links small">
+            <li><a href="#features">Smart Task Routing</a></li>
+            <li><a href="#preview">Voice Action Engine</a></li>
+            <li><a href="#features">GitHub &amp; Slack Sync</a></li>
+            <li><a href="#preview">Sprint Analytics</a></li>
+            <li><a href="#pricing">Pricing Plans</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-lg-2">
+          <h6 class="text-white fw-bold mb-3 small text-uppercase tracking-wider">Integrations</h6>
+          <ul class="list-unstyled footer-links small">
+            <li><a href="#features">GitHub &amp; GitLab</a></li>
+            <li><a href="#features">Jira &amp; Confluence</a></li>
+            <li><a href="#features">Linear Sync</a></li>
+            <li><a href="#features">Slack Bot Copilot</a></li>
+            <li><a href="#features">Datadog &amp; Sentry</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-lg-2">
+          <h6 class="text-white fw-bold mb-3 small text-uppercase tracking-wider">Resources</h6>
+          <ul class="list-unstyled footer-links small">
+            <li><a href="#faq">Documentation</a></li>
+            <li><a href="#faq">API Reference</a></li>
+            <li><a href="#faq">Security Whitepaper</a></li>
+            <li><a href="#faq">SOC2 Type II Report</a></li>
+            <li><a href="#faq">Engineering Blog</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-lg-2">
+          <h6 class="text-white fw-bold mb-3 small text-uppercase tracking-wider">Company</h6>
+          <ul class="list-unstyled footer-links small">
+            <li><a href="#hero">About FlowSync</a></li>
+            <li><a href="#hero">Careers (We're Hiring!)</a></li>
+            <li><a href="#hero">Privacy Policy</a></li>
+            <li><a href="#hero">Terms of Service</a></li>
+            <li><a href="#hero">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <hr class="border-secondary-subtle my-4">
+
+      <div class="d-flex flex-column flex-md-row align-items-center justify-content-between gap-3 text-secondary extra-small">
+        <div>
+          &copy; 2026 FlowSync AI Inc. All rights reserved. Built for high-velocity software engineering.
+        </div>
+        <div class="d-flex align-items-center gap-3 fs-6">
+          <a href="#" class="text-secondary hover-sky" aria-label="GitHub"><i class="bi bi-github"></i></a>
+          <a href="#" class="text-secondary hover-sky" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+          <a href="#" class="text-secondary hover-sky" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+          <a href="#" class="text-secondary hover-sky" aria-label="Discord"><i class="bi bi-discord"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Lead Capture Modal (Free Trial & Demo) -->
+  <div class="modal fade custom-modal" id="leadCaptureModal" tabindex="-1" aria-labelledby="leadModalTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content border border-secondary-subtle bg-card shadow-2xl rounded-4">
+        
+        <!-- Modal Header -->
+        <div class="modal-header border-bottom border-secondary-subtle px-4 pt-4 pb-2">
+          <div>
+            <span class="badge bg-indigo-subtle text-indigo px-2 py-1 rounded small mb-1">14-Day Free Access</span>
+            <h5 class="modal-title text-white fw-bold" id="leadModalTitle">Start Your FlowSync AI Trial</h5>
+            <p class="text-secondary small mb-0">Experience autonomous task intelligence with your engineering team.</p>
+          </div>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <!-- Modal Body: Form State -->
+        <div class="modal-body px-4 py-3" id="modalFormContainer">
+          <form id="leadCaptureForm" novalidate>
+            <!-- Selected Plan Badge -->
+            <div class="plan-pill-banner p-2 rounded-3 mb-3 d-flex align-items-center justify-content-between bg-dark-subtle border border-secondary-subtle">
+              <span class="small text-secondary">Selected Workspace Plan:</span>
+              <span class="badge bg-indigo-gradient text-white fw-semibold" id="selectedPlanBadge">Pro Plan ($64/mo)</span>
+            </div>
+
+            <!-- Full Name -->
+            <div class="mb-3">
+              <label for="fullNameInput" class="form-label text-white small fw-medium">Full Name</label>
+              <div class="input-group">
+                <span class="input-group-text bg-dark-subtle border-secondary-subtle text-secondary"><i class="bi bi-person"></i></span>
+                <input type="text" class="form-control bg-dark-subtle border-secondary-subtle text-white" id="fullNameInput" placeholder="e.g. Sarah Connor" required>
+              </div>
+              <div class="invalid-feedback text-danger extra-small" id="nameError">Please enter your name.</div>
+            </div>
+
+            <!-- Work Email -->
+            <div class="mb-3">
+              <label for="workEmailInput" class="form-label text-white small fw-medium">Work Email Address</label>
+              <div class="input-group">
+                <span class="input-group-text bg-dark-subtle border-secondary-subtle text-secondary"><i class="bi bi-envelope"></i></span>
+                <input type="email" class="form-control bg-dark-subtle border-secondary-subtle text-white" id="workEmailInput" placeholder="name@company.com" required>
+              </div>
+              <div class="invalid-feedback text-danger extra-small" id="emailError">Please enter a valid business work email.</div>
+              <div class="form-text text-secondary extra-small" id="emailHint">We will send your instant workspace invitation link here.</div>
+            </div>
+
+            <!-- Company Name & Team Size Row -->
+            <div class="row g-2 mb-3">
+              <div class="col-6">
+                <label for="companyNameInput" class="form-label text-white small fw-medium">Company</label>
+                <input type="text" class="form-control bg-dark-subtle border-secondary-subtle text-white" id="companyNameInput" placeholder="Acme Corp" required>
+              </div>
+              <div class="col-6">
+                <label for="teamSizeSelect" class="form-label text-white small fw-medium">Team Size</label>
+                <select class="form-select bg-dark-subtle border-secondary-subtle text-white" id="teamSizeSelect">
+                  <option value="5-15">5 - 15 engineers</option>
+                  <option value="16-50" selected>16 - 50 engineers</option>
+                  <option value="51-200">51 - 200 engineers</option>
+                  <option value="200+">200+ enterprise</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- Terms Checkbox -->
+            <div class="form-check mb-4">
+              <input class="form-check-input" type="checkbox" id="termsAgreeCheck" checked required>
+              <label class="form-check-label text-secondary extra-small" for="termsAgreeCheck">
+                I agree to the <a href="#" class="text-sky text-decoration-none">Terms of Service</a> and confirm our team uses Jira, GitHub, or Linear.
+              </label>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" class="btn btn-primary-gradient w-100 py-3 rounded-pill fw-bold text-white shadow-lg" id="submitLeadBtn">
+              <span class="btn-text">Launch Workspace Now</span>
+              <span class="spinner-border spinner-border-sm ms-2 d-none" id="submitSpinner" role="status" aria-hidden="true"></span>
+            </button>
+          </form>
+        </div>
+
+        <!-- Modal Body: Success State -->
+        <div class="modal-body px-4 py-5 text-center d-none" id="modalSuccessContainer">
+          <div class="success-icon-wrapper mb-3">
+            <i class="bi bi-check-circle-fill text-success display-4"></i>
+          </div>
+          <h4 class="text-white fw-bold mb-2">Welcome to FlowSync AI!</h4>
+          <p class="text-secondary small mb-4">
+            Your workspace has been provisioned for <strong class="text-white" id="successCompanyName">your team</strong>. A magic sign-in link and quick-start guide have been dispatched to:
+          </p>
+          <div class="p-2 px-3 rounded-3 bg-dark-subtle border border-secondary-subtle mb-4 text-sky fw-mono small" id="successEmailDisplay">
+            alex@company.com
+          </div>
+          <button class="btn btn-primary-gradient px-4 py-2 rounded-pill fw-bold" data-bs-dismiss="modal">
+            Open Web Workspace &rarr;
+          </button>
+        </div>
+
+        <div class="modal-footer border-top border-secondary-subtle px-4 py-2 justify-content-center">
+          <span class="text-secondary extra-small">
+            <i class="bi bi-shield-check text-sky me-1"></i> SOC2 Type II Certified &bull; No credit card needed
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Live Activity Toast Notification -->
+  <div class="toast-container position-fixed bottom-0 start-0 p-3 z-3">
+    <div id="liveActivityToast" class="toast custom-toast border border-secondary-subtle bg-card text-white shadow-xl" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="d-flex align-items-center p-3 gap-3">
+        <div class="toast-icon-badge">
+          <i class="bi bi-lightning-charge-fill text-warning"></i>
+        </div>
+        <div class="flex-grow-1">
+          <div class="fw-semibold small text-white" id="toastTitle">FlowSync Autonomous Action</div>
+          <div class="text-secondary extra-small" id="toastMessage">Rebalanced 4 sprint tasks for Stripe infrastructure squad.</div>
+        </div>
+        <button type="button" class="btn-close btn-close-white me-1 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scroll to Top Button -->
+  <button type="button" class="btn btn-outline-glass scroll-top-btn" id="scrollTopBtn" aria-label="Scroll to top">
+    <i class="bi bi-arrow-up"></i>
+  </button>
+
+  <!-- Bootstrap 5.3.3 Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+  <!-- Custom App JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
